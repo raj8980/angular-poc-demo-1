@@ -83,29 +83,35 @@ import { ShoppingCartService } from './shopping-cart.service';
     { path: 'products', component: ProductComponent },
     { path: 'shopping-cart', component: ShoppingCartComponent },
     { path: 'login', component: LoginComponent },
-    { path: 'check-out', component: CheckOutComponent, canActivate: [AuthGuardService] },
-    { path: 'order-success', component: OrderSuccessComponent, canActivate: [AuthGuardService] },
-    { path: 'my/orders', component: MyOrderComponent, canActivate: [AuthGuardService] },
+    { path: 'check-out', component: CheckOutComponent
+    //, canActivate: [AuthGuardService] 
+    },
+    { path: 'order-success', component: OrderSuccessComponent
+    //, canActivate: [AuthGuardService] 
+  },
+    { path: 'my/orders', component: MyOrderComponent
+    //, canActivate: [AuthGuardService] 
+  },
     { path: 'shopping-cart', component: ShoppingCartComponent },
     {
         path: 'admin/products/new',
-        component: ProductFormComponent,
-        canActivate: [AdminAuthGaurdService]
+        component: ProductFormComponent
+        //,canActivate: [AdminAuthGaurdService]
     },
     {
         path: 'admin/products/:id',
-        component: ProductFormComponent,
-        canActivate: [AdminAuthGaurdService]
+        component: ProductFormComponent
+        //,canActivate: [AdminAuthGaurdService]
     },
     {
         path: 'admin/products',
-        component: AdminProductComponent,
-        canActivate: [AdminAuthGaurdService]
+        component: AdminProductComponent
+        //,canActivate: [AdminAuthGaurdService]
     },
     {
         path: 'admin/orders',
-        component: AdminOrderComponent,
-        canActivate: [AdminAuthGaurdService]
+        component: AdminOrderComponent
+        //,canActivate: [AdminAuthGaurdService]
     },
 ], { relativeLinkResolution: 'legacy' }),
     NgbModule,

@@ -14,8 +14,8 @@ export class BsNavbarComponent {
   appUser:AppUser;
   isAdmin:boolean;
   constructor(private auth:AuthService) {
-      auth.appUser$.subscribe(appUser=>this.appUser=appUser);
-      auth.appUser$.subscribe(appUser=>this.isAdmin=appUser.isAdmin);
+      //auth.appUser$.subscribe(appUser=>this.appUser=appUser);
+      //auth.appUser$.subscribe(appUser=>this.isAdmin=appUser.isAdmin);
    }
 
   logout() {
