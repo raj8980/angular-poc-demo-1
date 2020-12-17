@@ -25,7 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "aot": true
           },
           "configurations": {
             "production": {
@@ -35,10 +36,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "optimization": true,
+              "optimization": false,
               "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
               "namedChunks": false,
               "aot": true,
               "extractLicenses": true,
@@ -49,6 +48,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -114,6 +117,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "organic-shop"
+    }
+  },
+  "defaultProject": "organic-shop",
+  "cli": {
+    "analytics": "3026eb66-38ae-4c8d-a4c2-10c9ce4eea5e"
+  }
 }
